@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- These classes are used in main.phtml, Defining them here instead of
+    fetching all classes in __main_css.phtml -->
+    <style type="text/css">
+        @media screen{
+            .onlyprintclass{
+                display:none;
+            }
+            .fixedheight_print {
+                overflow-y: auto;
+            }
+
+        }
+        @media print{
+            .onlyprintclass{
+                display:block;
+            }
+            .noprintclass{
+                display: none;
+            }
+            .fixedheight_print {
+                overflow-y: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+</html>

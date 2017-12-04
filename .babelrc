@@ -1,0 +1,11 @@
+{
+  "presets": [["es2015", {"modules": false}], "react"],
+  "env": {
+    "development": {
+      "plugins": ["styled-components", "transform-object-rest-spread"],
+    },
+    "production": {
+      "plugins": ["transform-object-rest-spread"],
+    }
+  },
+}
